@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 15:19:08 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/11/29 08:46:05 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:44:23 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ size_t	ft_strlen(const char *str)
 
 	i = 0;
 	while (str[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
 

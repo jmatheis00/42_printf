@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 16:25:35 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/05/24 16:22:24 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:44:49 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,7 @@ void	ft_p_x_putnbr(unsigned long int ch, int *counter)
 		ft_p_x_putnbr(ch % 16, counter);
 	}
 	if (ch < 16)
-	{
 		ft_putchar_nbr(base16[ch], counter);
-	}
 }
 
 void	ft_bigx_putnbr(unsigned int ch, int *counter)
@@ -79,7 +77,5 @@ void	ft_bigx_putnbr(unsigned int ch, int *counter)
 		ft_bigx_putnbr(ch % 16, counter);
 	}
 	if (ch < 16)
-	{
 		ft_putchar_nbr(base16[ch], counter);
-	}
 }

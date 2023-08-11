@@ -6,19 +6,24 @@
 #    By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/08 14:02:01 by jmatheis          #+#    #+#              #
-#    Updated: 2022/05/30 15:36:38 by jmatheis         ###   ########.fr        #
+#    Updated: 2023/08/11 13:46:37 by jmatheis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libftprintf.a
-CFLAGS		= -Wall -Werror -Wextra
+NAME		= libftprintf.a
 CC			= cc
+CFLAGS		= -Wall -Werror -Wextra
+
 MAIN = 	ft_printf.c \
 		ft_flags.c \
 		ft_putfunction.c \
 		ft_putnbrfunctions.c
 
 mains = $(MAIN:.c=.o)
+
+# ************* #
+#     RULES     #
+# ************* #
 
 $(NAME): $(mains)
 	ar -rs $(NAME) $^
